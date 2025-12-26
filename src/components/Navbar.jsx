@@ -1,4 +1,3 @@
-// src/components/Navbar.jsx
 import { useState } from "react";
 import { Link } from "react-scroll";
 
@@ -8,9 +7,7 @@ export default function Navbar() {
   const menuItems = [
     { id: "home", label: "Home" },
     { id: "about", label: "About" },
-    { id: "education", label: "Education" },
-    { id: "skills", label: "Skills" },
-    { id: "research", label: "Research" },
+    { id: "experience", label: "Experience" }, // Replaced Skills/Research with Experience
     { id: "contact", label: "Contact" },
   ];
 
@@ -54,7 +51,6 @@ export default function Navbar() {
           open ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        {/* Cross Button */}
         <button
           className="absolute top-4 right-4 text-gray-800 text-3xl font-bold"
           onClick={() => setOpen(false)}
@@ -80,12 +76,8 @@ export default function Navbar() {
         </ul>
       </div>
 
-      {/* Overlay */}
       {open && (
-        <div
-          className="fixed inset-0 bg-black opacity-30 z-40"
-          onClick={() => setOpen(false)}
-        ></div>
+        <div className="fixed inset-0 bg-black opacity-30 z-40" onClick={() => setOpen(false)}></div>
       )}
     </nav>
   );
