@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 export default function Hero() {
     return (
         <section 
-            id="home" // Added ID for navigation
+            id="home" 
             className="w-full lg:w-[80vw] mx-auto min-h-screen flex flex-col md:flex-row items-center justify-center px-6 py-24 relative overflow-hidden"
         >
 
@@ -13,10 +13,10 @@ export default function Hero() {
                     Hi, I'm <span className="text-blue-600">Mohit Kumar Yadav</span>
                 </h1>
                 <p className="text-lg md:text-xl text-gray-700 max-w-xl mb-8 leading-relaxed">
-                    I'm a <strong>Life Science Research Trainee</strong>.<br />
-                    Currently pursuing Master of Science from Rajasthan University.<br />
-                    Research focus: Breast Cancer & Metformin Impact on Cell Viability.<br />
-                    Passionate about scientific research, laboratory experiments, and data analysis.<br />
+                    I'm a <strong>Life Science Research Professional</strong>.<br />
+                    Completed Master of Science from Rajasthan University.<br />
+                    Specialized research: Breast Cancer & Metformin Impact on Cell Viability.<br />
+                    Expertise in scientific research, laboratory experiments, and data analysis.<br />
                     Let's connect and explore <strong>research collaborations</strong>!
                 </p>
                 
@@ -33,7 +33,7 @@ export default function Hero() {
                     </Link>
 
                     <Link
-                        to="experience" // Updated from "research" to "experience" to match your section ID
+                        to="experience" 
                         smooth={true}
                         duration={500}
                         offset={-80}
